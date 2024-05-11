@@ -455,7 +455,7 @@ phys_size_t get_effective_memsize(void)
 #ifdef CONFIG_MULTI_DTB
 int checkhw(char * name)
 {
-	unsigned int ddr_size=0;
+	unsigned int ddr_size=0x80000000;
 	char loc_name[64] = {0};
 	int i;
 	for (i=0; i<CONFIG_NR_DRAM_BANKS; i++) {
